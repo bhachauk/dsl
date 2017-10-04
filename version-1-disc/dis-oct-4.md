@@ -10,3 +10,4 @@ Caused by: java.net.NoRouteToHostException: No route to host (Host unreachable)
 Discussions:
 - https://stackoverflow.com/questions/2102912/cant-make-jdbc-connection-to-mysql-using-java-intellij-and-linux
 - https://bbs.archlinux.org/viewtopic.php?pid=346836#p346836
+- https://stackoverflow.com/questions/2118369/java-trouble-connecting-to-mysql
