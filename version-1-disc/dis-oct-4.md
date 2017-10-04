@@ -1,4 +1,4 @@
-##### Groovy DSL
+### Groovy DSL
 
 #### Error Line 1
 
@@ -20,7 +20,7 @@ com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link fai
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 ```
-Discussions:
+#### Discussions:
 - https://stackoverflow.com/questions/2102912/cant-make-jdbc-connection-to-mysql-using-java-intellij-and-linux
 - https://bbs.archlinux.org/viewtopic.php?pid=346836#p346836
 - https://stackoverflow.com/questions/2118369/java-trouble-connecting-to-mysql
