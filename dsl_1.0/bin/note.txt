@@ -1,0 +1,3 @@
+# version 1.0 bin text
+
+Use the command ../groovy/bin/groovy run script.groovy
