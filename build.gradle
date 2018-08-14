@@ -1,0 +1,64 @@
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+
+version = '1.0'
+
+ext{
+	GROOVY_VERSION = '2.4.15'
+	DISTRIBUTION_DIR = project.buildDir.absolutePath + File.separator + 'dsl'
+	VERSION_FILE = new File (DISTRIBUTION_DIR + File.separator + 'version.info')
+}
+
+repositories {
+	mavenCentral()
+}
+
+sourceSets {
+	main{
+		groovy { srcDirs = ['src/itachi'] }
+	}
+
+}
+configurations {
+	groovy
+	lib
+}
+
+dependencies {
+	compile configurations.lib
+	lib configurations.groovy
+
+	//groovy localGroovy()
+	groovy(group: 'org.codehaus.groovy', name: 'groovy-all', version: GROOVY_VERSION)
+	lib (group: 'org.codehaus.groovy', name: 'groovy-json', version: GROOVY_VERSION)
+
+	//filestudy
+	lib (group: 'org.apache.commons', name: 'commons-lang3', version: '3.7')
+
+	//email
+	lib (group: 'javax.mail', name: 'javax.mail-api', version: '1.6.0')
+	lib (group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0')
+}
+
+task copyFiles(type: Copy) {
+	into DISTRIBUTION_DIR
+	into('') {
+		from 'software'
+	}
+	into('lib/ext') {
+		from configurations.lib
+	}
+	into('lib/int'){
+		from 'src/itachi'
+	}
+    into('docs') {
+        from groovydoc.outputs
+    }
+}
+
+task createDistributions(dependsOn: copyFiles) {
+
+	doLast {
+		println "Build done !"
+	}
+}

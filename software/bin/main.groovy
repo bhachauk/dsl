@@ -7,9 +7,9 @@ if (args.length == 0)
 
 def mainScript = args[0]
 
-def dsldir = new File("../itachi")
+def dslDir = new File("../lib/int")
 
-def files = dsldir.listFiles()
+def files = dslDir.listFiles()
 
 def script = ""
 
@@ -19,8 +19,4 @@ script += '\n' + new File(mainScript).text
 
 def shell = new GroovyShell()
 
-//println script
-
 shell.evaluate(script)
-
-//shell.evaluate(new File(mainScript).text)

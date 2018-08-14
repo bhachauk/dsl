@@ -10,13 +10,15 @@ cmd << "-cp"
 
 def classpath = ""
 
-new File('../lib').listFiles().each {
+new File('../lib/ext').listFiles().each {
 
 	if (it.name.endsWith('.jar'))
 		
 		classpath += File.pathSeparator + it.absolutePath
 		//classpath +=it.absolutePath+' '
 }
+
+classpath = '../lib/ext/*'
 
 cmd << classpath
 cmd << 'main'
@@ -27,7 +29,6 @@ cmd << args[0]
 //println classpath
 
 ProcessBuilder builder = new ProcessBuilder()
-println cmd.toArray()
 
 builder.command((String[]) cmd.toArray())
 builder.inheritIO()
