@@ -2,43 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff26d68-ac8e-4e96-a72c-a99ed0d35d6d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/fileChanges/last-build.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/fileContent/fileContent.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/taskHistory/taskHistory.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5/taskHistory/taskHistory.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dsl.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/software/examples/example.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/software/examples/filestudy.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/itachi/email.groovy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/itachi/filestudy.groovy" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/bin/dsl.groovy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/bin/main.groovy" afterPath="$PROJECT_DIR$/software/bin/main.groovy" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/bin/note.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/bin/run.groovy" afterPath="$PROJECT_DIR$/software/bin/run.groovy" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/itachi/email.groovy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/itachi/filestudy-gun.groovy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/itachi/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/itachi/tocsv.groovy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/lib/mysql-connector-java-5.1.34-bin.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/lib/mysql-connector-java-5.1.38.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/lib/mysql-connector-java.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/lib/note.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dsl_1.0/lib/ojdbc6-11.2.0.3.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/version-1-disc/dis-oct-4.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/version-1-disc/disc-oct-5.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/version-1-disc/stack.groovy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileChanges/last-build.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileContent/fileContent.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/taskHistory/taskHistory.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5/taskHistory/taskHistory.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dsl.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/software/examples/filestudy.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,8 +103,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="494">
-                <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <first_editor relative-caret-position="234">
+                <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -332,11 +310,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534245955750</updated>
     </task>
+    <task id="LOCAL-00001" summary="modified.">
+      <created>1534260076536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534260076536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1026" height="707" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -351,7 +336,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -369,6 +354,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="modified." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -489,7 +478,7 @@
     <entry file="file://$PROJECT_DIR$/software/examples/filestudy.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -497,8 +486,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="494">
-            <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <first_editor relative-caret-position="234">
+            <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
