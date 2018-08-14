@@ -1,7 +1,6 @@
 mailserver{
-    sethost '192.168.9.44'
-
-    login 'bhanuchanderu@nmsworks.co.in'
+    sethost 'smtp.gmail.com'
+    login 'bhanuchander210@gmail.com','*******'
 
     sendmsg{
 
@@ -11,7 +10,7 @@ mailserver{
         subject 'DSL-EMAIL UTIL'
         body'''
                     ....content ..
-                    '''
+            '''
         attach 'dsl.groovy'
 
     }
