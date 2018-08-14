@@ -40,7 +40,7 @@ groovy run myscript.groovy
  
 
 
-##### Release Notes:
+**Release Notes:**
 
 **Version 1.0**
 
