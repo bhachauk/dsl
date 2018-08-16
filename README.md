@@ -35,7 +35,23 @@ groovy run myscript.groovy
 **Example :** `myscript.groovy`
 
 ```groovy
+mailserver{
+    sethost 'smtp.gmail.com'
+    login 'bhanuchander210@gmail.com','*******'
 
+    sendmsg{
+
+        to 'example@gmail.com'
+        cc 'any@gmail.com'
+        bcc 'any@gmail.com'
+        subject 'DSL-EMAIL UTIL'
+        body'''
+                    ....content ..
+            '''
+        attach 'dsl.groovy'
+
+    }
+}
 ``` 
  
 
@@ -44,12 +60,12 @@ groovy run myscript.groovy
 
 **Version 1.0**
 
-- filestudy
-    - Features
+- `filestudy`
+    - features
         - Make pattern - Converting from uneven file to even file by making `pattern`.
         - Normal filtering.
         - Picking up words by index and occurrence. 
-- email
-    - Features
+- `email`
+    - features
         - Sending mail from code.
         - Attaching files and body format (`text`,`html`).
