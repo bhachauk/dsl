@@ -4,9 +4,9 @@
 
 ##### Dependencies
 
-![Gradle](https://img.shields.io/badge/gradle-4.5-orange.svg?longCache=true&style=plastic)
-![Groovy](https://img.shields.io/badge/groovy-2.4.11-orange.svg?longCache=true&style=plastic)
-![Java](https://img.shields.io/badge/java-1.8.0__171-orange.svg?longCache=true&style=plastic)
+[![Gradle](https://img.shields.io/badge/gradle-4.5-orange.svg?longCache=true&style=plastic)](https://gradle.org/)
+[![Groovy](https://img.shields.io/badge/groovy-2.4.11-orange.svg?longCache=true&style=plastic)](http://groovy-lang.org/)
+[![Java](https://img.shields.io/badge/java-1.8.0__171-orange.svg?longCache=true&style=plastic)](https://www.java.com)
 
 
 ##### Overview
