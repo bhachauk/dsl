@@ -1,4 +1,5 @@
 import org.apache.commons.lang3.StringUtils
+import groovy.lang.MissingPropertyException
 
 /**
  * <h1>FileStudy</h1>

@@ -59,19 +59,31 @@ mailserver{
     }
 }
 ``` 
+**Examples**
  
-
+ Find more examples on the directory `dsl/examples`.
 
 **Release Notes:**
 
+**Version 1.1**
+
+- `jsonstudy`
+   - Parsing json file
+   - Printing json tree
+   - Node selectable 2D Conversion
+   - Node selectable Iteration
+   
+- `excelstudy`
+    - Column selection
+    - 2D Conversion
+    - sheet list
+    
 **Version 1.0**
 
 - `filestudy`
-    - features
-        - Make pattern - Converting from uneven file to even file by making `pattern`.
-        - Normal filtering.
-        - Picking up words by index and occurrence. 
+    - Make pattern - Converting from uneven file to even file by making `pattern`.
+    - Normal filtering.
+    - Picking up words by index and occurrence. 
 - `email`
-    - features
-        - Sending mail from code.
-        - Attaching files and body format (`text`,`html`).
+    - Sending mail from code.
+    - Attaching files and body format (`text`,`html`).

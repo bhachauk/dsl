@@ -2,7 +2,7 @@ String fileName = '/home/bhanuchander/test/txt/temp.txt'
 
 println new File(fileName).text
 
-Fileparse.filestudy {
+filestudy {
 
     inputFile fileName
 

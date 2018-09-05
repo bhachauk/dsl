@@ -1,12 +1,12 @@
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'
 
-version = '1.0'
+version = '1.1'
 
 ext{
 	GROOVY_VERSION = '2.4.15'
 	DISTRIBUTION_DIR = project.buildDir.absolutePath + File.separator + 'dsl'
-	VERSION_FILE = new File (DISTRIBUTION_DIR + File.separator + 'version.info')
+	VERSION_FILE = File.createTempFile('version', '.info')
 }
 
 repositories {
@@ -38,6 +38,20 @@ dependencies {
 	//email
 	lib (group: 'javax.mail', name: 'javax.mail-api', version: '1.6.0')
 	lib (group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0')
+
+	//excel
+	lib (group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '2.6.0')
+	lib (group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.17')
+	lib (group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17')
+	lib (group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '3.17')
+	lib (group: 'org.apache.poi', name: 'poi-excelant', version: '3.17')
+	lib (group: 'org.apache.poi', name: 'poi', version: '3.17')
+	lib (group: 'org.apache.poi', name: 'poi-examples', version: '3.17')
+	lib (group: 'org.apache.commons', name: 'commons-collections4', version: '4.1')
+
+	//json
+	lib (group: 'org.codehaus.groovy', name: 'groovy-json', version: GROOVY_VERSION)
+
 }
 
 task copyFiles(type: Copy) {
@@ -53,6 +67,11 @@ task copyFiles(type: Copy) {
 	}
     into('docs') {
         from groovydoc.outputs
+    }
+    into(''){
+        VERSION_FILE.text = "DSL Version : $version"
+        from VERSION_FILE
+        rename VERSION_FILE.name, 'version.info'
     }
 }
 
