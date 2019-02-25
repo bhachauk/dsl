@@ -41,12 +41,11 @@ groovy run myscript.groovy
 **Example :** `myscript.groovy`
 
 ```groovy
-mailserver{
+import io.github.bhanuchander210.filestudy.EmailDSL
+EmailDSL.mailserver{
     sethost 'smtp.gmail.com'
     login 'bhanuchander210@gmail.com','*******'
-
     sendmsg{
-
         to 'example@gmail.com'
         cc 'any@gmail.com'
         bcc 'any@gmail.com'
@@ -55,7 +54,6 @@ mailserver{
                     ....content ..
             '''
         attach 'dsl.groovy'
-
     }
 }
 ``` 

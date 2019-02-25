@@ -13,7 +13,5 @@ EmailDSL.mailserver{
                     ....content ..
             '''
         attach 'dsl.groovy'
-
     }
-
 }
