@@ -1,4 +1,5 @@
-mailserver{
+import io.github.bhanuchander210.filestudy.EmailDSL
+EmailDSL.mailserver{
     sethost 'smtp.gmail.com'
     login 'bhanuchander210@gmail.com','*******'
 

@@ -1,7 +1,7 @@
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'
 
-version = '1.1'
+version = '1.2'
 
 ext{
 	GROOVY_VERSION = '2.4.15'
@@ -15,9 +15,8 @@ repositories {
 
 sourceSets {
 	main{
-		groovy { srcDirs = ['src/itachi'] }
+		groovy { srcDirs = ['src/main/groovy'] }
 	}
-
 }
 configurations {
 	groovy
@@ -27,18 +26,14 @@ configurations {
 dependencies {
 	compile configurations.lib
 	lib configurations.groovy
-
 	//groovy localGroovy()
 	groovy(group: 'org.codehaus.groovy', name: 'groovy-all', version: GROOVY_VERSION)
 	lib (group: 'org.codehaus.groovy', name: 'groovy-json', version: GROOVY_VERSION)
-
 	//filestudy
 	lib (group: 'org.apache.commons', name: 'commons-lang3', version: '3.7')
-
 	//email
 	lib (group: 'javax.mail', name: 'javax.mail-api', version: '1.6.0')
 	lib (group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0')
-
 	//excel
 	lib (group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '2.6.0')
 	lib (group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.17')
@@ -48,10 +43,8 @@ dependencies {
 	lib (group: 'org.apache.poi', name: 'poi', version: '3.17')
 	lib (group: 'org.apache.poi', name: 'poi-examples', version: '3.17')
 	lib (group: 'org.apache.commons', name: 'commons-collections4', version: '4.1')
-
 	//json
 	lib (group: 'org.codehaus.groovy', name: 'groovy-json', version: GROOVY_VERSION)
-
 }
 
 task copyFiles(type: Copy) {
@@ -63,7 +56,7 @@ task copyFiles(type: Copy) {
 		from configurations.lib
 	}
 	into('lib/int'){
-		from 'src/itachi'
+		from jar.outputs
 	}
     into('docs') {
         from groovydoc.outputs
@@ -76,7 +69,6 @@ task copyFiles(type: Copy) {
 }
 
 task createDistributions(dependsOn: copyFiles) {
-
 	doLast {
 		println "Build done !"
 	}

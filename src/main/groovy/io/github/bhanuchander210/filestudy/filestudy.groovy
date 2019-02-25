@@ -1,3 +1,4 @@
+package io.github.bhanuchander210.filestudy
 import org.apache.commons.lang3.StringUtils
 import groovy.lang.MissingPropertyException
 
@@ -16,12 +17,13 @@ import groovy.lang.MissingPropertyException
  * </pre>
  */
 
-FileStudy filestudy(Closure closure)
-{
-	FileStudy fileStudy = new FileStudy()
-	closure.delegate = fileStudy
-	closure()
-	fileStudy
+class FileStudyDSL {
+	static FileStudy filestudy(Closure closure) {
+		FileStudy fileStudy = new FileStudy()
+		closure.delegate = fileStudy
+		closure()
+		fileStudy
+	}
 }
 
 class FileStudy

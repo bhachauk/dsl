@@ -1,6 +1,7 @@
+package io.github.bhanuchander210.email
+
 import javax.mail.internet.*
 import javax.mail.*
-
 /**
  * This class has methods for sending Emails
  * <h4>Example 1: Simple Mail from nmsworks.co.in </h4>
@@ -71,13 +72,13 @@ import javax.mail.*
  *      }
  * </pre>
  */
-
-Email mailserver(Closure cl)
-{
-    def email = new Email()
-    cl.delegate = email
-    cl()
-    return email
+class EmailDSL {
+    static Email mailserver(Closure cl) {
+        def email = new Email()
+        cl.delegate = email
+        cl()
+        return email
+    }
 }
 
 class Email {
@@ -107,27 +108,27 @@ class Email {
 
     void init()
     {
-        Properties props = System.getProperties();
-        props.put("mail.smtp.starttls.enable",true);
-        props.setProperty("mail.smtp.ssl.trust", host);
-        props.put("mail.smtp.host", host);
+        Properties props = System.getProperties()
+        props.put("mail.smtp.starttls.enable",true)
+        props.setProperty("mail.smtp.ssl.trust", host)
+        props.put("mail.smtp.host", host)
 
         if(password!=null){
 
-            props.put("mail.smtp.user", from);
-            props.put("mail.smtp.password", password);
+            props.put("mail.smtp.user", from)
+            props.put("mail.smtp.password", password)
             auth_status=true
         }
 
-        props.put("mail.smtp.auth",auth_status);
-        props.put("mail.smtp.port", port_no);//587
+        props.put("mail.smtp.auth",auth_status)
+        props.put("mail.smtp.port", port_no)//587
 
-        Session session = Session.getInstance(props, null);
-        message = new MimeMessage(session);
-        message.setFrom(new InternetAddress(from));
+        Session session = Session.getInstance(props, null)
+        message = new MimeMessage(session)
+        message.setFrom(new InternetAddress(from))
 
-        transport = session.getTransport("smtp");
-        transport.connect(host, from, password);
+        transport = session.getTransport("smtp")
+        transport.connect(host, from, password)
     }
 
     SendMail sendmsg(Closure cls)

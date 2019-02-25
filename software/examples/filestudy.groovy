@@ -1,8 +1,9 @@
+import io.github.bhanuchander210.filestudy.FileStudyDSL
 String fileName = '/home/bhanuchander/test/txt/temp.txt'
 
 println new File(fileName).text
 
-filestudy {
+FileStudyDSL.filestudy {
 
     inputFile fileName
 

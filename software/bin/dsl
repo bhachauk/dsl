@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if [ -z $JAVA_HOME ]
+then
+	echo "\$JAVA_HOME not set; Auto set done."
+fi
+
+if [ -z $GROOVY_HOME ]
+then
+	echo "\$GROOVY_HOME not set"
+	exit
+fi
+
+$GROOVY_HOME//bin/groovy -cp ../lib/int/*:../lib/ext/* "$@"

@@ -1,13 +1,16 @@
+package io.github.bhanuchander210.excel
 import org.apache.poi.hssf.usermodel.*
 import org.apache.poi.xssf.usermodel.*
 
-static Excel excelstudy (Closure cl) {
+class ExcelDSL {
+    static Excel excelstudy(Closure cl) {
 
-    def excel = new Excel()
-    cl.delegate = excel
-    cl.resolveStrategy = Closure.DELEGATE_FIRST
-    cl()
-    return excel
+        def excel = new Excel()
+        cl.delegate = excel
+        cl.resolveStrategy = Closure.DELEGATE_FIRST
+        cl()
+        return excel
+    }
 }
 
 class Excel {

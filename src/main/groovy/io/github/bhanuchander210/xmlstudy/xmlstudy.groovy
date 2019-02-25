@@ -1,13 +1,16 @@
+package io.github.bhanuchander210.xmlstudy
 import groovy.xml.StreamingMarkupBuilder
 import groovy.xml.XmlUtil
 
-Xml xmlstudy (Closure cl) {
+class XmlDSL {
+    static Xml xmlstudy(Closure cl) {
 
-    def xml = new Xml()
-    cl.delegate = xml
-    cl.resolveStrategy = Closure.DELEGATE_FIRST
-    cl()
-    return xml
+        def xml = new Xml()
+        cl.delegate = xml
+        cl.resolveStrategy = Closure.DELEGATE_FIRST
+        cl()
+        return xml
+    }
 }
 
 class Xml {

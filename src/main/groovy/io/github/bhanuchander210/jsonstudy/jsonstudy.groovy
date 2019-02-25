@@ -1,12 +1,16 @@
+package io.github.bhanuchander210.jsonstudy
 import com.github.opendevl.*
 import groovy.json.*
 
-static Json jsonstudy (Closure cl)
+class JsonDSL
 {
-    def jsonO = new Json()
-    cl.delegate = jsonO
-    cl()
-    return jsonO
+    static Json jsonstudy (Closure cl)
+    {
+        def jsonO = new Json()
+        cl.delegate = jsonO
+        cl()
+        return jsonO
+}
 }
 
 class Json {

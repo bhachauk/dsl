@@ -1,5 +1,6 @@
 // Both xls and xlsx files are supported.
-excelstudy{
+import io.github.bhanuchander210.filestudy.ExcelDSL
+ExcelDSL.excelstudy{
 
     excelfile 'filename.xls'
 
